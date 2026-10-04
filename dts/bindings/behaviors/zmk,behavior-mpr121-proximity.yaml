@@ -1,0 +1,12 @@
+description: MPR121 proximity behavior
+compatible: "zmk,behavior-mpr121-proximity"
+
+include: zero_param.yaml
+
+properties:
+  near:
+    type: phandle-array
+  far:
+    type: phandle-array
+  sleep:
+    type: phandle-array
