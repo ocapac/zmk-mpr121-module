@@ -1,0 +1,56 @@
+description: Freescale MPR121 capacitive touch / proximity sensor
+compatible: "freescale,mpr121"
+
+include: [sensor-device.yaml, i2c-device.yaml]
+
+properties:
+  int-gpios:
+    type: phandle-array
+    required: true
+
+  touch-threshold:
+    type: int
+    default: 0x08
+
+  release-threshold:
+    type: int
+    default: 0x05
+
+  prox-touch-threshold:
+    type: int
+    default: 0x06
+
+  prox-release-threshold:
+    type: int
+    default: 0x04
+
+  electrode-count:
+    type: int
+    default: 8
+
+  enable-proximity:
+    type: boolean
+
+  debounce:
+    type: int
+    default: 0x11
+
+  afe-configuration:
+    type: int
+    default: 0x10
+
+  filter-configuration:
+    type: int
+    default: 0x20
+
+  auto-config-usl:
+    type: int
+    default: 0xCA
+
+  auto-config-lsl:
+    type: int
+    default: 0x83
+
+  auto-config-tl:
+    type: int
+    default: 0xB4
