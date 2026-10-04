@@ -1,0 +1,10 @@
+zephyr_library()
+zephyr_library_sources(
+  src/events/mpr121_events.c
+  src/mpr121_subsystem.c
+  src/behaviors/behavior_mpr121_gestures.c
+  src/behaviors/behavior_mpr121_proximity.c
+  src/behaviors/behavior_mpr121_mode_toggle.c
+)
+zephyr_library_include_directories(include)
+add_subdirectory(drivers/sensor/mpr121)
