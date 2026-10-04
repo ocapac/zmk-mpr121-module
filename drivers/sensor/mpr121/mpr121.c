@@ -6,7 +6,7 @@
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
 
-#include "mpr121.h"
+#include "include/zephyr/drivers/sensor/mpr121.h"
 
 LOG_MODULE_REGISTER(mpr121, CONFIG_MPR121_LOG_LEVEL);
 
