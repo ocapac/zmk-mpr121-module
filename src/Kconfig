@@ -38,3 +38,9 @@ config MPR121_CURSOR_SENSITIVITY
     int "Cursor sensitivity (x10)"
     default 30
     depends on MPR121_SUBSYSTEM
+
+config MPR121_SUBSYSTEM_LOG_LEVEL
+    int "Subsystem log level"
+    default 3
+    range 0 4
+    depends on MPR121_SUBSYSTEM
