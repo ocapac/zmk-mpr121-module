@@ -1,0 +1,2 @@
+rsource "drivers/sensor/mpr121/Kconfig"
+rsource "src/Kconfig"
