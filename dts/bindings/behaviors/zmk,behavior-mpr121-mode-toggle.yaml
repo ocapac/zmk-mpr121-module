@@ -1,0 +1,4 @@
+description: Toggle MPR121 disc between cursor and scroll mode
+compatible: "zmk,behavior-mpr121-mode-toggle"
+
+include: zero_param.yaml
