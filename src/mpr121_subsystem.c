@@ -4,7 +4,7 @@
 #include <zephyr/logging/log.h>
 #include <math.h>
 
-#include <drivers/sensor/mpr121.h>
+#include <zephyr/drivers/sensor/mpr121.h>
 #include <zmk/events/mpr121_events.h>
 
 LOG_MODULE_REGISTER(mpr121_subsystem, CONFIG_MPR121_SUBSYSTEM_LOG_LEVEL);
