@@ -1,0 +1,9 @@
+zephyr_library_amend()
+zephyr_library_sources_ifdef(CONFIG_MPR121_SUBSYSTEM
+    events/mpr121_events.c
+    mpr121_subsystem.c
+    behaviors/behavior_mpr121_gestures.c
+    behaviors/behavior_mpr121_proximity.c
+    behaviors/behavior_mpr121_mode_toggle.c
+)
+zephyr_library_include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../include)
