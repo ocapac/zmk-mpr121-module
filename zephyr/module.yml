@@ -1,6 +1,6 @@
 name: zmk-mpr121-module
 build:
   cmake: ../
-  kconfig: ../Kconfig
+  kconfig: ../
   settings:
     dts_root: ../
