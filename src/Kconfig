@@ -1,0 +1,40 @@
+config MPR121_SUBSYSTEM
+    bool "MPR121 disc gesture subsystem"
+    default y
+    depends on MPR121
+    select INPUT
+
+config MPR121_TOUCH_THRESHOLD
+    int "Touch delta threshold"
+    default 100
+    depends on MPR121_SUBSYSTEM
+
+config MPR121_DEADZONE
+    int "Centre deadzone (x10)"
+    default 4
+    depends on MPR121_SUBSYSTEM
+
+config MPR121_SWIPE_THRESHOLD
+    int "Swipe distance threshold (x10)"
+    default 8
+    depends on MPR121_SUBSYSTEM
+
+config MPR121_TAP_MAX_DURATION_MS
+    int "Max tap duration (ms)"
+    default 250
+    depends on MPR121_SUBSYSTEM
+
+config MPR121_TAP_MAX_MOVEMENT
+    int "Max tap movement (x10)"
+    default 5
+    depends on MPR121_SUBSYSTEM
+
+config MPR121_ROTARY_THRESHOLD_RAD
+    int "Rotary threshold (x100 rad)"
+    default 157
+    depends on MPR121_SUBSYSTEM
+
+config MPR121_CURSOR_SENSITIVITY
+    int "Cursor sensitivity (x10)"
+    default 30
+    depends on MPR121_SUBSYSTEM
