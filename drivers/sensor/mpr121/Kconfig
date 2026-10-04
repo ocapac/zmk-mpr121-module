@@ -1,6 +1,8 @@
 config MPR121
     bool "MPR121 capacitive touch / proximity sensor"
     depends on I2C && GPIO
+    select I2C
+    select GPIO
     help
       Driver for the Freescale MPR121 capacitive touch and proximity sensor.
 
