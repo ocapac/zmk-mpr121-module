@@ -1,0 +1,11 @@
+config MPR121
+    bool "MPR121 capacitive touch / proximity sensor"
+    depends on I2C && GPIO
+    help
+      Driver for the Freescale MPR121 capacitive touch and proximity sensor.
+
+config MPR121_LOG_LEVEL
+    int "MPR121 log level"
+    depends on MPR121
+    default 3
+    range 0 4
