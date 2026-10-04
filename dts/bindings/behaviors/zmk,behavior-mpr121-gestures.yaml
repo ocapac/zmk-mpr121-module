@@ -1,0 +1,40 @@
+description: MPR121 disc gesture behavior
+compatible: "zmk,behavior-mpr121-gestures"
+
+include: zero_param.yaml
+
+properties:
+  tap-center:
+    type: phandle-array
+  tap-top:
+    type: phandle-array
+  tap-bottom:
+    type: phandle-array
+  tap-left:
+    type: phandle-array
+  tap-right:
+    type: phandle-array
+  swipe-up:
+    type: phandle-array
+  swipe-down:
+    type: phandle-array
+  swipe-left:
+    type: phandle-array
+  swipe-right:
+    type: phandle-array
+  rotary-cw-top:
+    type: phandle-array
+  rotary-ccw-top:
+    type: phandle-array
+  rotary-cw-bottom:
+    type: phandle-array
+  rotary-ccw-bottom:
+    type: phandle-array
+  rotary-cw-left:
+    type: phandle-array
+  rotary-ccw-left:
+    type: phandle-array
+  rotary-cw-right:
+    type: phandle-array
+  rotary-ccw-right:
+    type: phandle-array
